@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int startbalance = 100;
-        int paytobalance = 1100;
-        int paybonus = paytobalance/100;
-        if (paytobalance < 1000) {
-            paybonus = 0;
+        int startBalance = 100;
+        int payToBalance = 100;
+        int payBonus = payToBalance / 100;
+        if (payToBalance < 1000) {
+            payBonus = 0;
         } else {
-            paybonus = paytobalance/100;
+            payBonus = payToBalance / 100;
         }
-        int itogobalance = startbalance + paytobalance + paybonus;
-        System.out.println("Итоговый балансе " + itogobalance + " руб");
-        System.out.println("Количество бонусных рублей " + paybonus + " руб");
+        int totalBalance = startBalance + payToBalance + payBonus;
+        System.out.println("Итоговый балансе " + totalBalance + " руб");
+        System.out.println("Количество бонусных рублей " + payBonus + " руб");
     }
 }
